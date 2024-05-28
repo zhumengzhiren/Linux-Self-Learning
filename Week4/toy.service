@@ -1,0 +1,13 @@
+[Unit]
+Description=Toy Web Server
+Requires=network.target
+After=network.target
+
+[Service]
+ExecStart=/path/to/decal-labs/4/run
+User=yourusername
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
